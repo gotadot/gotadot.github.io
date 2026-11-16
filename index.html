@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#111111">
+  <meta name="description" content="Doforia is a todo app for tasks, habits, and focus. Organize Actions with Tags, track progress, and make time for what matters. In development.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://gotadot.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Doforia">
+  <meta property="og:url" content="https://gotadot.github.io/">
+  <meta property="og:title" content="Doforia — Tasks, Habits & Focus">
+  <meta property="og:description" content="Doforia is a todo app for tasks, habits, and focus. Organize Actions with Tags, track progress, and make time for what matters. In development.">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Doforia — Tasks, Habits & Focus">
+  <meta name="twitter:description" content="Doforia is a todo app for tasks, habits, and focus. Organize Actions with Tags, track progress, and make time for what matters. In development.">
+  <title>Doforia — Tasks, Habits & Focus</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Doforia",
+    "url": "https://gotadot.github.io/",
+    "description": "Doforia is a todo app for tasks, habits, and focus. Organize Actions with Tags, track progress, and make time for what matters. In development.",
+    "applicationCategory": "ProductivityApplication",
+    "operatingSystem": "Windows (in development)",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Got A dot"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Doforia",
+    "alternateName": "Doforia Todo App",
+    "url": "https://gotadot.github.io/"
+  }
+  </script>
+  <link rel="icon" type="image/svg+xml" href="./favicon-adaptive.svg">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="page">
+    <header class="site-header" id="top">
+      <a class="brand" href="#top" aria-label="Doforia home">
+        <img src="./logo.svg" width="37" height="37" alt="" aria-hidden="true">
+        <span>Doforia</span>
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#features">Product</a>
+        <a href="#preview">Preview</a>
+        <a href="#download">Download</a>
+        <a href="#pricing">Pricing</a>
+      </nav>
+      <a class="button button-dark nav-cta" href="#download">Get Doforia <span aria-hidden="true">↘</span></a>
+    </header>
+
+    <main id="main">
+      <section class="hero wrap" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">DOFORIA <span class="eyebrow-line"></span> A SELF-UPGRADE SYSTEM</p>
+          <h1 id="hero-title">Turn goals<br>into Action.</h1>
+          <p class="hero-description">Doforia is a todo app and self-upgrade system that connects tasks, habits, focus time, personal records and achievements. Turn everyday to-dos into meaningful Action and track progress toward your goals.</p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#download">Explore downloads <span aria-hidden="true">↓</span></a>
+            <a class="button button-light" href="#pricing">See pricing <span aria-hidden="true">↗</span></a>
+          </div>
+          <p class="hero-note">Designed by Got A dot <span aria-hidden="true">·</span> In development</p>
+        </div>
+
+        <div class="hero-preview" id="preview">
+          <div class="desktop-window" aria-label="Interactive concept preview of the Doforia desktop interface">
+            <div class="window-bar">
+              <span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+              <span>DOFORIA <span class="window-bar-light">/ CONCEPT PREVIEW</span></span>
+            </div>
+            <div class="desktop-content">
+              <aside class="app-sidebar" aria-label="Illustrative application navigation">
+                <div class="app-sidebar-brand"><img src="./logo.svg" alt="" width="26" height="26"></div>
+                <div class="sidebar-active"><span class="sidebar-symbol" aria-hidden="true">▦</span> Today</div>
+                <div><span class="sidebar-symbol" aria-hidden="true">☑</span> Tasks</div>
+                <div><span class="sidebar-symbol" aria-hidden="true">◷</span> Habits</div>
+                <div><span class="sidebar-symbol" aria-hidden="true">◉</span> Focus</div>
+                <div class="sidebar-bottom">+ New block</div>
+              </aside>
+              <div class="app-main">
+                <div class="app-head">
+                  <div>
+                    <span class="app-overline">YOUR WORKSPACE</span>
+                    <h2>Good morning.</h2>
+                    <p>Make today count, one action at a time.</p>
+                  </div>
+                  
+                </div>
+                <div class="app-workspace">
+                  <section class="tasks-panel" aria-label="Interactive task checklist">
+                    <div class="mini-title"><strong>Today’s Actions</strong><span>Today</span></div>
+                    <div id="demo-tasks" class="task-list">
+                      <label class="task"><input type="checkbox" checked><span class="task-name">Plan my day</span><span class="task-type">Routine</span></label>
+                      <label class="task"><input type="checkbox"><span class="task-name">Build something useful</span><span class="task-type">Deep work</span></label>
+                      <label class="task"><input type="checkbox"><span class="task-name">Take a movement break</span><span class="task-type">Habit</span></label>
+                    </div>
+                  </section>
+                  <section class="insight-panel" aria-label="Interactive progress indicator">
+                    <span class="app-overline">TODAY'S PROGRESS</span>
+                    <div class="progress-ring" id="progress-ring" style="--pct:33.33%" role="img" aria-label="33% of demo actions completed"><div><span id="task-percent">33</span><small>%</small></div></div>
+                    <p><strong id="task-count">1</strong> of 3 complete</p>
+                  </section>
+                </div>
+                <div class="focus-panel">
+                  <div class="focus-icon" aria-hidden="true">◷</div>
+                  <div class="focus-label"><span>Focus session</span><strong id="timer-display">25:00</strong></div>
+                  <button id="timer-toggle" type="button" class="timer-button" aria-label="Start focus timer">Start</button>
+                  <button id="timer-reset" type="button" class="timer-reset" aria-label="Reset timer">↺</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="preview-caption">Interactive concept, not a released application.</p>
+        </div>
+      </section>
+
+      <section class="features" id="features" aria-labelledby="features-title">
+        <div class="features-inner wrap">
+          <h2 id="features-title">Make time for what matters.</h2>
+          <p>Use <span class="tag-highlight">Tag</span> to connect Actions to the parts of life that matter to you—work, health, learning, and more. Related Actions can share settings and build a record of your progress, so you spend less time setting things up and see where your time goes.</p>
+        </div>
+      </section>
+
+
+      <section class="system-section wrap" id="system" aria-labelledby="system-title">
+        <div class="system-heading">
+          <p class="eyebrow">FEATURES</p>
+          <div class="system-heading-grid">
+            <h2 id="system-title">One Action.<br>Many ways to grow.</h2>
+            <p>Doforia starts with the familiar simplicity of a todo app. It calls tasks and habits <strong>Action</strong>, connecting the things you do each day with the bigger goals you choose to pursue.</p>
+          </div>
+        </div>
+        <div class="system-grid">
+          <article class="system-card">
+            <span class="system-number">TASKS</span>
+            <h3>From a goal to a plan.</h3>
+            <p>Create a Task or Habit with a date, priority and tags. Break bigger tasks into multiple levels, then use the planned <strong>Map Editor</strong> to explore the structure as a tree and add sub-Actions.</p>
+            <span class="system-status">Product concept</span>
+          </article>
+          <article class="system-card">
+            <span class="system-number">FOCUS TIMER</span>
+            <h3>Focus on what matters.</h3>
+            <p>Attach a <strong>Focus Timer</strong> to an Action when useful. Arrange focus, rest and Light Work periods. Planned <strong>Cycle</strong> tracking and the <strong>Today Dashboard</strong> connect work time and completion records.</p>
+            <span class="system-status">Product concept</span>
+          </article>
+          <article class="system-card">
+            <span class="system-number">HABITS</span>
+            <h3>See your consistency.</h3>
+            <p>Follow recurring habits and connect activity to Tags. Review calendars, weekly dots and <strong>Streak</strong> markers. Set long-term <strong>Achievements</strong>, like reading hours or habit milestones.</p>
+            <span class="system-status">Product concept</span>
+          </article>
+          <article class="system-card">
+            <span class="system-number">WORKSPACE</span>
+            <h3>Make the space yours.</h3>
+            <p>Arrange and resize <strong>Modules</strong> on Today. Mix text, dates, Sticky Notes and time cards. Customize visual themes, colors, sounds and menus as your workspace evolves.</p>
+            <span class="system-status">Product concept</span>
+          </article>
+          <article class="system-card">
+            <span class="system-number">JOURNAL</span>
+            <h3>Remember more than tasks.</h3>
+            <p>Use <strong>Diary &amp; Calendar</strong> to plan and review the day. <strong>Emotional Dustbin</strong> is envisioned as a private writing space for thoughts and emotions.</p>
+            <span class="system-status">Product concept</span>
+          </article>
+          <article class="system-card">
+            <span class="system-number">ADVANCED TOOLS</span>
+            <h3>Reduce the friction.</h3>
+            <p>Planned desktop <strong>Widgets</strong>, app and website blocking, automatic tool launching, and conditional blocking based on Action or Tag Cycle goals help create an environment for focused work.</p>
+            <span class="system-status">Advanced features / planned</span>
+          </article>
+        </div>
+        <p class="system-disclaimer">These are product goals, not a claim that every feature is implemented or currently available.</p>
+      </section>
+
+      <section class="platform-section" id="platforms" aria-labelledby="platform-title">
+        <div class="wrap platform-inner">
+          <div>
+            <p class="eyebrow">CROSS-PLATFORM VISION</p>
+            <h2 id="platform-title">Your system.<br>Across devices.</h2>
+            <p>Development currently uses Windows and web as a foundation. The longer-term vision includes Windows, macOS, iOS, Linux, Android and XR devices. Features such as Widgets, app launching and blocking will depend on each platform’s capabilities and permissions.</p>
+          </div>
+          <div class="platform-list" aria-label="Platform development status">
+            <span class="platform-current" aria-label="Windows: current development priority">Windows</span><span class="platform-planned">Web</span><span class="platform-planned">macOS</span><span class="platform-planned">iOS</span><span class="platform-planned">Linux</span><span class="platform-planned">Android</span><span class="platform-planned">XR</span>
+            
+          </div>
+        </div>
+      </section>
+
+      <section class="download-section" id="download" aria-labelledby="download-heading">
+        <div class="download-inner wrap">
+          <div class="download-copy">
+            <p class="eyebrow">DESKTOP APPLICATION</p>
+            <h2 id="download-heading">Download Doforia.</h2>
+            <p>Doforia is currently being developed with Windows and web as its foundation. Installers will be linked here when a public release is ready.</p>
+          </div>
+          <div class="download-details">
+            <div class="release-status"><span class="status-indicator"></span> NOT RELEASED</div>
+            <a class="button button-light" href="https://github.com/gotadot/Doforia/releases" target="_blank" rel="noopener noreferrer">View GitHub Releases <span aria-hidden="true">↗</span></a>
+            <span class="release-note">No installer available yet. The software repository is currently private.</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="pricing-section wrap" id="pricing" aria-labelledby="pricing-heading">
+        <div class="pricing-intro">
+          <p class="eyebrow">PLANNED PRICING</p>
+          <h2 id="pricing-heading">A plan for<br>your workflow.</h2>
+          <p>Start with the essentials. Upgrade when you need a more personal and powerful workspace.</p>
+        </div>
+        <div class="pricing-grid">
+          <article class="plan">
+            <div class="plan-top"><h3>Free</h3><span>Essentials</span></div>
+            <p>The foundations of daily Action.</p>
+            <div class="price">$0 <small>USD / forever</small></div>
+            <ul>
+              <li>Basic Task and Habit actions</li>
+              <li>Basic action blocks</li>
+              <li>Basic focus timer</li>
+              <li>Basic Today view</li>
+            </ul>
+            <div class="plan-status">Not released</div>
+          </article>
+          <article class="plan plan-plus">
+            <div class="plan-top"><h3>Plus</h3><span>One-time purchase</span></div>
+            <p>More control over your space and workflow.</p>
+            <div class="price">$25 <small>USD / once</small></div>
+            <ul>
+              <li>Everything in Free</li>
+              <li>Widgets, advanced Action blocks and automation</li>
+              <li>Advanced priority matrix</li>
+              <li>Colors, fonts and visual customization</li>
+              <li>Behavior detection, more KPIs and dashboards</li>
+            </ul>
+            <div class="plan-status">Planned · Not for sale</div>
+          </article>
+          <article class="plan">
+            <div class="plan-top"><h3>Pro</h3><span>Coming soon</span></div>
+            <p>Advanced assistance as you grow.</p>
+            <div class="price">$15 <small>USD / month</small></div>
+            <div class="annual">or $150 USD / year</div>
+            <ul>
+              <li>Everything in Plus</li>
+              <li>AI assistance</li>
+              <li>Interactive reminders</li>
+              <li>Work and habit optimization</li>
+            </ul>
+            <div class="plan-status">Coming soon</div>
+          </article>
+        </div>
+        <p class="pricing-footnote">Pricing and features are provisional. Downloads, purchases and subscriptions are not available on this website yet.</p>
+      </section>
+
+      <section class="closing-section wrap">
+        <div><p class="eyebrow">SMALL ACTIONS. REAL MOMENTUM.</p><h2>Make progress<br>your own.</h2></div>
+        <a class="button button-dark" href="#top">Back to top <span aria-hidden="true">↑</span></a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-mark"><img src="./logo.svg" alt="" width="29" height="29"><strong>Doforia</strong><span>by Got A dot</span></div>
+      <span>Made by Quion</span>
+      <span>© <span id="year">2026</span> Got A dot</span>
+    </footer>
+  </div>
+</body>
+</html>
