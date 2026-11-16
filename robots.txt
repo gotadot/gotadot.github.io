@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://gotadot.github.io/sitemap.xml
