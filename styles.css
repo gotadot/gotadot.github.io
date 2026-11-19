@@ -216,6 +216,38 @@ h1, h2, h3 { letter-spacing: -.055em; }
 .download-details .button { min-width: 227px; }
 .release-note { font-size: 11px; line-height: 1.55; color: #777; max-width: 330px; }
 
+/* Demo edition */
+.demo-download { grid-template-columns: minmax(0, .93fr) minmax(0, 1.07fr); align-items: start; gap: clamp(28px, 4.5vw, 70px); padding-block: 85px; }
+.demo-download .download-copy h2 { font-size: clamp(46px, 4.1vw, 68px); letter-spacing: -.055em; }
+.demo-download .download-copy > p:not(.eyebrow) { max-width: 430px; }
+.demo-highlights { display: flex; flex-wrap: wrap; gap: 7px; margin: 23px 0 30px; }
+.demo-highlights span { border: 1px solid #d3d3d3; border-radius: 4px; padding: 7px 10px; font-size: 10px; font-weight: 650; letter-spacing: .025em; color: #474747; }
+.demo-download .download-details { gap: 13px; }
+.demo-disabled-button { min-width: 226px; border-color: #bebebe; background: #e7e7e7; color: #606060; opacity: 1; cursor: not-allowed; transform: none !important; }
+.demo-disabled-button:hover { background: #e7e7e7; }
+.demo-preview-link { color: #333; font-size: 12px; font-weight: 650; border-bottom: 1px solid currentColor; padding-block: 5px; }
+.demo-preview-link:hover { color: #777; }
+.demo-info { border: 1px solid #d7d7d7; background: #fff; border-radius: 8px; padding: 27px 28px 20px; min-width: 0; }
+.demo-info-header { display: flex; flex-direction: column; gap: 12px; padding-bottom: 20px; border-bottom: 1px solid #e6e6e6; }
+.demo-info-header .eyebrow { margin: 0; }
+.demo-info-header strong { font-size: 21px; letter-spacing: -.035em; }
+.demo-info-row { display: grid; grid-template-columns: 24px minmax(0,1fr); column-gap: 13px; padding: 19px 0; border-bottom: 1px solid #e6e6e6; }
+.demo-info-index { font-size: 11px; font-weight: 700; color: #909090; padding-top: 2px; }
+.demo-info-row h3 { margin: 0 0 7px; font-size: 14px; letter-spacing: -.015em; }
+.demo-info-row p { margin: 0; color: #606060; font-size: 12px; line-height: 1.7; }
+.demo-info-footnote { color: #777; font-size: 11px; line-height: 1.65; margin: 19px 0 0; }
+@media (max-width: 870px) { .demo-download { grid-template-columns: 1fr; gap: 35px; padding-block: 60px; } }
+@media (max-width: 650px) { .demo-info { padding: 22px 20px 17px; } .demo-download { padding-block: 54px; } .demo-download .download-copy h2 { font-size: clamp(42px, 11vw, 57px); } }
+@media (prefers-color-scheme: dark) {
+  .demo-highlights span { color: #d4d4d4; border-color: #595959; }
+  .demo-info { background: #202020; border-color: #4a4a4a; }
+  .demo-info-header, .demo-info-row { border-color: #3e3e3e; }
+  .demo-info-header strong, .demo-info-row h3 { color: #f3f3f3; }
+  .demo-info-index, .demo-info-row p, .demo-info-footnote { color: #bdbdbd; }
+  .demo-preview-link { color: #f1f1f1; }
+  .demo-disabled-button, .demo-disabled-button:hover { background: #303030; color: #a5a5a5; border-color: #646464; }
+}
+
 /* Plans */
 .pricing-section { display: grid; grid-template-columns: minmax(205px, 255px) minmax(0, 1fr); column-gap: clamp(26px, 4vw, 60px); padding-block: 100px 78px; }
 .pricing-intro h2 { font-size: clamp(43px, 3.8vw, 58px); line-height: 1.09; font-weight: 735; margin: 24px 0 18px; }
