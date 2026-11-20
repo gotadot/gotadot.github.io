@@ -219,6 +219,9 @@ h1, h2, h3 { letter-spacing: -.055em; }
 /* Demo edition */
 .demo-download { grid-template-columns: minmax(0, .93fr) minmax(0, 1.07fr); align-items: start; gap: clamp(28px, 4.5vw, 70px); padding-block: 85px; }
 .demo-download .download-copy h2 { font-size: clamp(46px, 4.1vw, 68px); letter-spacing: -.055em; }
+.demo-brand-line { display: flex; align-items: center; gap: 17px; margin-bottom: 20px; }
+.demo-brand-line .eyebrow { margin: 0; }
+.demo-app-logo { display: block; width: 84px; height: 84px; flex: 0 0 84px; object-fit: contain; }
 .demo-download .download-copy > p:not(.eyebrow) { max-width: 430px; }
 .demo-highlights { display: flex; flex-wrap: wrap; gap: 7px; margin: 23px 0 30px; }
 .demo-highlights span { border: 1px solid #d3d3d3; border-radius: 4px; padding: 7px 10px; font-size: 10px; font-weight: 650; letter-spacing: .025em; color: #474747; }
@@ -237,7 +240,7 @@ h1, h2, h3 { letter-spacing: -.055em; }
 .demo-info-row p { margin: 0; color: #606060; font-size: 12px; line-height: 1.7; }
 .demo-info-footnote { color: #777; font-size: 11px; line-height: 1.65; margin: 19px 0 0; }
 @media (max-width: 870px) { .demo-download { grid-template-columns: 1fr; gap: 35px; padding-block: 60px; } }
-@media (max-width: 650px) { .demo-info { padding: 22px 20px 17px; } .demo-download { padding-block: 54px; } .demo-download .download-copy h2 { font-size: clamp(42px, 11vw, 57px); } }
+@media (max-width: 650px) { .demo-info { padding: 22px 20px 17px; } .demo-download { padding-block: 54px; } .demo-download .download-copy h2 { font-size: clamp(42px, 11vw, 57px); } .demo-app-logo { width: 68px; height: 68px; flex-basis: 68px; } }
 @media (prefers-color-scheme: dark) {
   .demo-highlights span { color: #d4d4d4; border-color: #595959; }
   .demo-info { background: #202020; border-color: #4a4a4a; }
