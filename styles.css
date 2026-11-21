@@ -484,6 +484,24 @@ h1, h2, h3 { letter-spacing: -.055em; }
 .system-card p strong{font-weight:700;color:#222}
 .system-status{margin-top:auto;font-size:10px;letter-spacing:.06em;font-weight:700;color:#858585}
 .system-disclaimer{font-size:11px;color:#858585;margin:19px 0 0;line-height:1.6}
+
+/* Future Doforia capabilities, intentionally distinct from existing features */
+.roadmap-section{margin-top:100px;border-top:1px solid var(--line);padding-top:54px}
+.roadmap-heading{display:grid;grid-template-columns:minmax(0,1fr) minmax(240px,.65fr);gap:35px;align-items:end;margin-bottom:31px}
+.roadmap-heading .eyebrow{margin-bottom:15px}
+.roadmap-heading h2{font-size:clamp(36px,3.6vw,55px);letter-spacing:-.06em;line-height:1.12;margin:0}
+.roadmap-heading>p{font-size:14px;line-height:1.8;max-width:390px;color:var(--muted);margin:0 0 3px}
+.roadmap-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+.roadmap-card{border:1px solid var(--line);background:var(--soft);padding:29px 30px 30px;min-width:0}
+.roadmap-card-top{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;color:var(--muted);font-size:10px;letter-spacing:.11em;font-weight:700}
+.roadmap-card-top span:last-child{border:1px solid var(--line);padding:5px 8px;border-radius:4px;letter-spacing:.08em;white-space:nowrap}
+.roadmap-card h3{font-size:clamp(21px,2vw,28px);letter-spacing:-.05em;line-height:1.2;margin:31px 0 13px}
+.roadmap-card p{font-size:13px;line-height:1.85;color:var(--muted);margin:0;max-width:520px}
+.roadmap-card p strong{color:var(--ink);font-weight:700}
+.roadmap-note{font-size:11px;line-height:1.7;color:var(--muted);margin:18px 0 0}
+@media(max-width:870px){.roadmap-heading{grid-template-columns:1fr;gap:15px}.roadmap-heading>p{max-width:560px}}
+@media(max-width:650px){.roadmap-section{margin-top:66px;padding-top:39px}.roadmap-heading{margin-bottom:24px}.roadmap-heading h2{font-size:clamp(35px,9vw,47px)}.roadmap-grid{grid-template-columns:1fr;gap:10px}.roadmap-card{padding:25px 23px}.roadmap-card h3{margin-top:23px}}
+
 .platform-section{background:#f8f8f8;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .platform-inner{display:grid;grid-template-columns:1.06fr .94fr;gap:clamp(28px,5vw,85px);align-items:center;padding-block:82px}
 .platform-inner h2{font-size:clamp(42px,4vw,65px);line-height:1.1;letter-spacing:-.06em;margin:18px 0 22px}
