@@ -204,6 +204,65 @@ h1, h2, h3 { letter-spacing: -.055em; }
   .features-inner p { font-size: 15px; }
 }
 
+/* Shared Workspace section */
+.shared-workspace-section { background:#f8f8f8; border-bottom:1px solid var(--line); }
+.shared-workspace-inner {
+  display:grid; grid-template-columns:minmax(0,1.06fr) minmax(0,.94fr);
+  column-gap:clamp(34px,6vw,96px); align-items:center;
+  padding-block:clamp(76px,8vw,122px);
+}
+.shared-workspace-copy { min-width:0; max-width:615px; }
+.shared-workspace-copy .eyebrow { margin-bottom:18px; }
+.shared-workspace-copy h2 {
+  font-size:clamp(43px,4.7vw,75px); line-height:1.08;
+  letter-spacing:-.065em; margin:0 0 29px;
+}
+.shared-workspace-copy > p:not(.eyebrow) { color:#565656; font-size:clamp(14px,1.13vw,16px); line-height:1.85; margin:0 0 18px; }
+.shared-workspace-copy > .shared-workspace-lead { color:#252525; font-size:clamp(18px,1.6vw,22px); line-height:1.65; }
+.shared-workspace-copy strong { font-weight:730; color:#111; }
+.shared-workspace-copy > .shared-workspace-closing { color:#111; font-weight:720; margin-top:26px; }
+.shared-workspace-copy > .shared-workspace-note { border-top:1px solid #dedede; padding-top:18px; margin-top:27px; font-size:11px; color:#777; }
+.shared-workspace-visual { min-width:0; border:1px solid #d7d7d7; border-radius:9px; padding:clamp(15px,2.4vw,32px); background:#fff; }
+.shared-workspace-diagram { display:block; width:100%; height:auto; }
+.shared-diagram-user { stroke:#222; stroke-width:1.6; fill:#fafafa; }
+.shared-diagram-face { stroke:#222; stroke-width:1.7; fill:none; }
+.shared-diagram-person { stroke:#222; stroke-width:1.7; stroke-linecap:round; fill:none; }
+.shared-diagram-link { stroke:#9b9b9b; }
+.shared-diagram-board { fill:#f7f7f7; stroke:#242424; stroke-width:1.6; }
+.shared-diagram-board-stroke { stroke:#242424; }
+.shared-diagram-filled { fill:#292929; }
+.shared-diagram-light { fill:#d9d9d9; }
+.shared-diagram-dot { fill:#242424; }
+.shared-workspace-visual-footer { display:flex; justify-content:space-between; gap:10px; font-size:10px; letter-spacing:.1em; font-weight:700; color:#777; padding:8px 7px 0; }
+@media(max-width:870px) {
+  .shared-workspace-inner { grid-template-columns:1fr; gap:32px; padding-block:70px; }
+  .shared-workspace-copy { max-width:710px; }
+  .shared-workspace-visual { max-width:600px; width:100%; margin:auto; }
+}
+@media(max-width:650px) {
+  .shared-workspace-inner { padding-block:58px 65px; gap:24px; }
+  .shared-workspace-copy h2 { font-size:clamp(42px,10vw,58px); }
+  .shared-workspace-visual { padding:13px; }
+  .shared-workspace-visual-footer { font-size:8px; letter-spacing:.04em; }
+}
+@media(prefers-color-scheme:dark) {
+  .shared-workspace-section { background:#1b1b1b; }
+  .shared-workspace-copy > p:not(.eyebrow) { color:#bbb; }
+  .shared-workspace-copy > .shared-workspace-lead,
+  .shared-workspace-copy > .shared-workspace-closing,
+  .shared-workspace-copy strong { color:#f5f5f5; }
+  .shared-workspace-copy > .shared-workspace-note { color:#aaa; border-color:#454545; }
+  .shared-workspace-visual { background:#242424; border-color:#555; }
+  .shared-diagram-user { stroke:#f0f0f0; fill:#303030; }
+  .shared-diagram-face, .shared-diagram-person { stroke:#f0f0f0; }
+  .shared-diagram-link { stroke:#a0a0a0; }
+  .shared-diagram-board { fill:#2b2b2b; stroke:#f0f0f0; }
+  .shared-diagram-board-stroke { stroke:#f0f0f0; }
+  .shared-diagram-filled, .shared-diagram-dot { fill:#f0f0f0; }
+  .shared-diagram-light { fill:#656565; }
+  .shared-workspace-visual-footer { color:#c8c8c8; }
+}
+
 /* Ownership manifesto — independent from the time-limited Demo */
 .ownership-section {
   background: #111;
