@@ -537,6 +537,9 @@ h1, h2, h3 { letter-spacing: -.055em; }
 .system-heading-grid p strong{color:var(--ink)}
 .system-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--line);border-left:1px solid var(--line)}
 .system-card{display:flex;flex-direction:column;min-width:0;padding:30px 28px 28px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.system-icon{width:min(100%,152px);height:108px;display:flex;align-items:center;justify-content:center;align-self:flex-start;margin-bottom:24px;color:var(--ink)}
+.system-icon svg{display:block;width:100%;height:100%;stroke:currentColor;stroke-width:2.3;stroke-linecap:round;stroke-linejoin:round}
+@media(max-width:650px){.system-icon{width:126px;height:89px;margin-bottom:18px}}
 .system-number{font-size:10px;letter-spacing:.13em;font-weight:650;color:#888}
 .system-card h3{font-size:clamp(21px,2vw,28px);font-weight:710;letter-spacing:-.055em;line-height:1.15;margin:28px 0 15px}
 .system-card p{font-size:13px;line-height:1.8;color:#535353;margin:0 0 25px}
