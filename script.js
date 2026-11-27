@@ -46,52 +46,47 @@ reset.addEventListener("click", () => { stopTimer(); remaining = 25 * 60; update
 document.getElementById("year").textContent = String(new Date().getFullYear());
 
 
-// Keep the Windows Demo installer in sync with the newest public GitHub Release.
-// The hardcoded v1.0.2 link and labels in index.html remain usable if this
-// request is blocked, rate-limited, or the user is offline.
+// The HTML link opens the latest release until its installer is confirmed.
 async function refreshDemoRelease() {
   const link = document.getElementById("demo-download-link");
   if (!link) return;
 
   try {
     const response = await fetch(
-      "https://api.github.com/repos/gotadot/doforia-demo-downloads/releases/latest"
+      "https://api.github.com/repos/gotadot/doforia-demo-downloads/releases/latest",
+      { cache: "no-store" }
     );
     if (!response.ok) return;
 
     const release = await response.json();
-    if (!release || release.draft || release.prerelease ||
+    if (!release || release.draft !== false || release.prerelease !== false ||
         typeof release.tag_name !== "string" ||
-        !/^v?\d+(?:\.\d+){1,3}(?:[-+][0-9A-Za-z.-]+)?$/.test(release.tag_name) ||
+        !/^v\d+\.\d+\.\d+$/.test(release.tag_name) ||
         !Array.isArray(release.assets)) return;
 
+    const version = release.tag_name;
+    const name = `Doforia-Plus-Demo-${version.slice(1)}-Windows-x64-Setup.exe`;
+    const installer = `https://github.com/gotadot/doforia-demo-downloads/releases/download/${version}/${name}`;
     const asset = release.assets.find(item =>
-      typeof item.name === "string" &&
-      item.name.endsWith("-Windows-x64-Setup.exe") &&
-      typeof item.browser_download_url === "string"
+      item && item.name === name &&
+      item.state === "uploaded" &&
+      item.browser_download_url === installer &&
+      Number.isSafeInteger(item.size) && item.size > 0
     );
     if (!asset) return;
 
-    const installer = new URL(asset.browser_download_url);
-    if (installer.protocol !== "https:" ||
-        installer.hostname !== "github.com" ||
-        !installer.pathname.startsWith("/gotadot/doforia-demo-downloads/releases/download/")) return;
-
-    link.href = installer.href;
-    const version = release.tag_name.startsWith("v")
-      ? release.tag_name : "v" + release.tag_name;
-
+    link.href = installer;
     document.querySelectorAll("[data-demo-version]").forEach(el => {
-      el.textContent = version;
+      el.textContent = version + " ";
+      el.hidden = false;
     });
-    if (Number.isFinite(asset.size) && asset.size > 0) {
-      const size = (asset.size / 1000000).toFixed(1) + " MB";
-      document.querySelectorAll("[data-demo-size]").forEach(el => {
-        el.textContent = size;
-      });
-    }
+    const size = (asset.size / 1000000).toFixed(1) + " MB";
+    document.querySelectorAll("[data-demo-size]").forEach(el => {
+      el.textContent = " · " + size;
+      el.hidden = false;
+    });
   } catch (_) {
-    // Preserve the verified fallback installer and version in the HTML.
+    // Keep the link to the latest release page.
   }
 }
 void refreshDemoRelease();
