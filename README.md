@@ -1,9 +1,9 @@
-# Doforia — official website
+# Got A dot — official website
 
-Doforia is a Windows-first todo app for tasks, habits, focus, and personal progress.
+Brand homepage: https://gotadot.github.io/
 
-Official website: https://gotadot.github.io/
+Doforia product website: https://gotadot.github.io/doforia/
 
-Source site: migrated from [Doforia-Website](https://github.com/gotadot/Doforia-Website).
+The Doforia site lives in `doforia/`. The root page is the Got A dot product directory. Legacy product section links at the root are redirected to their corresponding Doforia anchors. Existing root assets remain for compatibility.
 
-This repository contains the public static website only. The application source repository is separate and private.
+This repository contains the public static website only. Application source is maintained separately.

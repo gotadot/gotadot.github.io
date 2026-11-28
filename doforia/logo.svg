@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400" role="img" aria-labelledby="title desc">
+  <title id="title">Doforia icon</title>
+  <desc id="desc">Smiling ofo brand symbol, black on transparent background.</desc>
+  <g fill="#000000">
+    <path id="small-o" d="M 84 165
+C 116 164 143 190 143 222
+C 143 254 116 280 84 280
+C 52 280 26 255 26 222
+C 26 190 52 165 84 165 Z
+M 84 187
+C 104 187 120 202 120 222
+C 120 242 104 258 84 258
+C 64 258 48 242 48 222
+C 48 202 64 187 84 187 Z" fill-rule="evenodd"/>
+    <path id="f" d="M 283 19
+C 260 11 232 13 207 31
+C 182 49 165 78 155 119
+L 108 140 L 115 159 L 152 143
+C 151 187 158 224 173 262
+L 194 256
+C 181 213 173 170 175 133
+L 230 108 L 224 89 L 181 108
+C 190 72 210 48 235 39
+C 263 29 287 39 302 71
+L 322 62
+C 314 42 302 26 283 19 Z" fill-rule="evenodd"/>
+    <path id="large-o" d="M 297 95
+C 341 95 375 129 375 173
+C 375 216 341 251 297 251
+C 253 251 218 217 218 173
+C 218 129 253 95 297 95 Z
+M 297 118
+C 328 118 353 142 353 173
+C 353 203 328 228 297 228
+C 266 228 241 203 241 173
+C 241 142 266 118 297 118 Z" fill-rule="evenodd"/>
+    <path id="smile" d="M 375 253 L 42 300
+C 66 361 122 391 178 396
+C 241 401 288 382 324 352
+C 353 326 369 290 375 253 Z
+M 342 281 L 79 318
+C 112 357 157 374 199 373
+C 264 375 320 337 342 281 Z" fill-rule="evenodd"/>
+  </g>
+</svg>
