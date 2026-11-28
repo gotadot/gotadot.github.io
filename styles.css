@@ -93,6 +93,16 @@ h1, h2, h3 { letter-spacing: -.055em; }
   margin-bottom: 26px;
 }
 .hero-description { font-size: clamp(15px, 1.23vw, 18px); line-height: 1.76; max-width: 505px; color: #414141; }
+/* Compact first-screen product differentiators */
+.hero-differentiators{list-style:none;padding:0;margin:23px 0 0;max-width:510px;border-top:1px solid var(--line)}
+.hero-differentiators li{margin:0;border-bottom:1px solid var(--line)}
+.hero-differentiators a{display:grid;grid-template-columns:26px minmax(0,1fr);align-items:center;gap:12px;padding:10px 0;color:var(--ink)}
+.hero-differentiators a:hover strong{text-decoration:underline;text-underline-offset:3px}
+.hero-differentiators svg{width:23px;height:23px;display:block}
+.hero-differentiators span{display:block;min-width:0}
+.hero-differentiators strong{display:block;font-size:13px;line-height:1.4;font-weight:700}
+.hero-differentiators small{display:block;font-size:12px;line-height:1.5;color:var(--muted);margin-top:2px}
+@media(max-width:650px){.hero-differentiators{margin-top:19px}.hero-differentiators a{padding:9px 0}.hero-differentiators small{font-size:12px}}
 .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
 .hero-note { margin: 29px 0 0; font-size: 12px; color: #777; }
 .hero-note span { padding: 0 7px; }
